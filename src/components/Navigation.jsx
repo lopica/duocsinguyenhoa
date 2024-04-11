@@ -2,7 +2,7 @@ export default function Navigation() {
   return (
     <div className="header">
       <a href="#">
-        <img className="header__logo" src="/logo.png" alt="yzone logo" />
+        <img className="header__logo" src="logo.png" alt="yzone logo" />
       </a>
       <nav className="header__navigation">
         <ul className="navigation__list">

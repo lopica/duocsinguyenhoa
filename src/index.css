@@ -402,5 +402,22 @@ body {
 
 /*************  FOOTER SECTION ***************************/
 .footer {
-  padding: 9.6rem 0;
+  padding: 2.4rem 0;
+  border-top: 1px solid #999;
+}
+
+.footer__social__links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+address p a {
+  text-decoration: none;
+}
+
+address p a:link,
+address p a:visited {
+  color: #333;
 }
