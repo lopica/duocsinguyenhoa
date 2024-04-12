@@ -13,10 +13,10 @@ export default function Hero() {
             Bằng bộ sản phẩm rửa âm đạo trong, rửa âm đạo ngoài đến từ
             Yzonecare, Vagiflux.
           </p>
-          <a className="hero__btn hero__btn--primary margin-right-sm" href="#">
+          <a className="hero__btn hero__btn--primary margin-right-sm" href="https://www.facebook.com/duocsinguyenhoa84">
             Tư vấn cho tôi
           </a>
-          <a className="hero__btn" href="#">
+          <a className="hero__btn" href="#featured">
             Tìm hiểu thêm &darr;
           </a>
           <div className="hero__proof">
@@ -46,7 +46,7 @@ export default function Hero() {
                 alt="vietnamese woman"
               />
             </div>
-            <p className="proof__text"><span>10,000+</span> người đã sử dụng năm nay!</p>
+            <p className="proof__text"><span>5,000+</span> người đã sử dụng năm nay!</p>
           </div>
         </div>
         <div className="hero__image">

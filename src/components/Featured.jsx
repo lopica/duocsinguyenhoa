@@ -1,6 +1,6 @@
 export default function Featured() {
   return (
-    <section className="featured">
+    <section className="featured" id="featured">
       <div className="container">
         <h2 className="featured__heading">Được công nhận bởi</h2>
         <div className="featured__logos">

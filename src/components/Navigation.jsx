@@ -7,17 +7,17 @@ export default function Navigation() {
       <nav className="header__navigation">
         <ul className="navigation__list">
           <li>
-            <a className="list__link" href="#">
-              Tiktok
+            <a className="list__link" href="#introduction">
+              Cách sử dụng
             </a>
           </li>
           <li>
-            <a className="list__link" href="#">
-              Youtube
+            <a className="list__link" href="#faq">
+              Câu hỏi thường gặp
             </a>
           </li>
           <li>
-            <a className="list__link list__link--cta" href="#">
+            <a className="list__link list__link--cta" href="https://www.facebook.com/duocsinguyenhoa84">
               Fanpage
             </a>
           </li>

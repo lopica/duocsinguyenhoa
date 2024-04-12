@@ -1,6 +1,6 @@
 export default function Introduction() {
   return (
-    <section className="introduction">
+    <section className="introduction" id="introduction">
       <div className="container">
         <span className="introduction__subheading">
           Sử dụng bộ vệ sinh như nào?

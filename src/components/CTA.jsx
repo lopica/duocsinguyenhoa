@@ -1,16 +1,17 @@
 export default function CTA() {
   return (
-    <section className="cta">
-      <div className="container__btn">
-        <a className="cta__btn cta__btn--primary" href="#">
-          Tư vấn cho tôi
-        </a>
-        {/* <a className="cta__btn" href="#">Tìm hiểu thêm</a> */}
+    <section className="cta" id="cta">
+      <div className="container">
+        <div className="cta__card">
+          <h2 className="cta__heading">Bắt đầu sử dụng sản phẩm ngay</h2>
+          <a className="cta__btn" href="https://www.facebook.com/duocsinguyenhoa84">
+            Tư vấn cho tôi
+          </a>
+          <small className="cta__text">
+            Thông tin của bạn sẽ không được chia sẻ cho bất kỳ ai khác
+          </small>
+        </div>
       </div>
-      <small className="cta__small">
-        Thông tin của bạn sẽ không được chia sẻ cho bất kỳ ai khác
-      </small>
-      
     </section>
   );
 }

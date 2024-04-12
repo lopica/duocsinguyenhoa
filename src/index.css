@@ -292,7 +292,7 @@ body {
 
 /************* INTRODUCTION SECTION ***************************/
 .introduction {
-  padding: 9.6rem 0;
+  padding: 9.6rem 2.4rem;
 }
 
 .introduction__heading {
@@ -399,6 +399,258 @@ body {
   display: block;
   text-align: center;
 } */
+/*************  BENEFIT SECTION ***************************/
+.benefit {
+  padding: 9.6rem 0 4.3rem 0;
+  /* background-color: #fddae6; */
+}
+
+.benefit__heading {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.benefit__list {
+  list-style: none;
+}
+
+.benefit__list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.benefit__icon {
+  width: 5.2rem;
+  height: 5.2rem;
+}
+
+.benefit__text {
+  margin-bottom: 0.4rem;
+}
+
+.benefit__description {
+  padding: 0 4rem;
+  text-align: justify;
+}
+
+
+/*************  SOCIAL PROOF SECTION ***************************/
+.social-proof {
+  padding: 9.6rem 0;
+}
+
+.social-proof__heading {
+  text-align: center;
+}
+
+.carousel {
+  width: 800px;
+  margin: 5rem auto 10rem auto;
+  background-color: #de769b;
+  color: #333;
+  border-radius: 8px;
+  padding: 32px 48px 32px 86px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+.carousel__img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+
+.carousel__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  /* color: #c6fcf5; */
+}
+
+.carousel__author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  /* color: #c3fae8; */
+}
+
+.carousel__job {
+  /* color: #c3fae8; */
+  font-size: 12px;
+}
+
+.carousel__btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__btn--left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel__btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.carousel__icon {
+  height: 24px;
+  width: 24px;
+  stroke: #de769b;
+}
+
+.carousel__dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.carousel__dot {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #de769b;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.carousel__dot--fill {
+  background-color: #de769b;
+}
+
+/*************  FAQ SECTION ***************************/
+.faq {
+  padding: 9.6rem 0;
+  background-color: #fddae6;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.faq__heading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.faq__number,
+.faq__text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #087f5b;
+}
+
+.faq__number:hover,
+.faq__number:hover {
+  cursor: pointer;
+}
+
+.faq__hiddenbox {
+  grid-column: 2;
+  display: none;
+}
+
+.faq__hiddenbox > p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.faq__hiddenbox > ul {
+  color: #868e96;
+  margin-left: 1.8rem;
+  margin-bottom: 1.6rem;
+  list-style-type: disc;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.faq__hiddenbox > ul:last-child {
+  margin: 0;
+}
+
+.faq__item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 2.4rem;
+  align-items: center;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+
+.faq__item:hover {
+  cursor: pointer;
+}
+
+.faq__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #087f5b;
+}
+
+.faq__icon:hover {
+  cursor: pointer;
+}
+
+/*************  CTA SECTION ***************************/
+.cta {
+  padding: 9.6rem 0;
+}
+
+.cta__card {
+  background-color: #de769b;
+  border-radius: 10px;
+  padding: 3.2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.cta__heading {
+  margin-bottom: 2.4rem;
+}
+
+.cta__btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 1.2rem;
+  color: #de769b;
+}
 
 /*************  FOOTER SECTION ***************************/
 .footer {
