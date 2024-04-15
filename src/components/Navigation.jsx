@@ -1,6 +1,15 @@
+import Menu from '../assets/menu.svg'
+import Close from '../assets/close.svg'
+import { useState } from 'react';
 export default function Navigation() {
+  const [show, setShow] = useState(false)
+
+  function hander() {
+    setShow(!show)
+  }
+
   return (
-    <div className="header">
+    <div className={`header ${show ? 'header--open' : ''}`}>
       <a href="#">
         <img className="header__logo" src="logo.png" alt="yzone logo" />
       </a>
@@ -23,6 +32,10 @@ export default function Navigation() {
           </li>
         </ul>
       </nav>
+      <button className="navigation__mobile">
+        <img className='navigation__icon' src={Menu} alt='menu icon' onClick={hander} />
+        <img className='navigation__icon' src={Close} alt='close icon' onClick={hander} />
+      </button>
     </div>
   );
 }

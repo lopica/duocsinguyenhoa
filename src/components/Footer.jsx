@@ -26,17 +26,17 @@ export default function Footer() {
           <ul className="footer__social__links">
             <li>
               <a href="https://www.facebook.com/duocsinguyenhoa84">
-                <img src={FaceIcon} alt="facebook logo" />
+                <img className='footer__icon' src={FaceIcon} alt="facebook logo" />
               </a>
             </li>
             <li>
               <a href="https://www.tiktok.com/@duocsinguyenhoa">
-                <img src={TiktokIcon} alt="tiktok logo" />
+                <img className='footer__icon' src={TiktokIcon} alt="tiktok logo" />
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@DUOCSINGUYENHOA">
-                <img src={YoutubeIcon} alt="youtube logo" />
+                <img className='footer__icon' src={YoutubeIcon} alt="youtube logo" />
               </a>
             </li>
           </ul>

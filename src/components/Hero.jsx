@@ -6,14 +6,16 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__container">
         <div className="hero__text">
-          <h1 className="hero__heading">
-            Biến vùng kín luôn sạch sẽ, thơm tho và hấp dẫn
-          </h1>
+          <h1 className="hero__heading">DƯỢC SĨ NGUYỄN HOA</h1>
           <p className="hero__description">
-            Bằng bộ sản phẩm rửa âm đạo trong, rửa âm đạo ngoài đến từ
-            Yzonecare, Vagiflux.
+            ThS Dược học – ĐH Paris Descartes <br /> Tư vấn chăm sóc Yzone – Sắc đẹp &
+            sinh lý nữ
           </p>
-          <a className="hero__btn hero__btn--primary margin-right-sm" href="https://www.facebook.com/duocsinguyenhoa84">
+          <small>Nhà sáng lập YZONE CARE Chuẩn y khoa</small>
+          <a
+            className="hero__btn hero__btn--primary margin-right-sm"
+            href="https://www.facebook.com/duocsinguyenhoa84"
+          >
             Tư vấn cho tôi
           </a>
           <a className="hero__btn" href="#featured">
@@ -46,13 +48,15 @@ export default function Hero() {
                 alt="vietnamese woman"
               />
             </div>
-            <p className="proof__text"><span>5,000+</span> người đã sử dụng năm nay!</p>
+            <p className="proof__text">
+              <span>5,000+</span> người đã nhận tư vấn năm nay!
+            </p>
           </div>
         </div>
         <div className="hero__image">
           <img
-            src="https://images.unsplash.com/photo-1561158317-757a4631770e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="flower illustration for vagina"
+            src="new_hero.jpg"
+            alt="duoc si nguyen hoa image"
           />
         </div>
       </div>

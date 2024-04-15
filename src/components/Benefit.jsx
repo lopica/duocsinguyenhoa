@@ -9,14 +9,14 @@ export default function Benefit() {
         <ul className="benefit__list grid grid--3">
           <li>
             <img className="benefit__icon" src={Safe} alt="safe icon" />
-            <p className="benefit__text">An toàn</p>
-            <small className="benefit__description">Đạt chuẩn chất lượng và được cấp phép bới bộ y tế</small>
+            <p className="benefit__text">An tâm</p>
+            <small className="benefit__description">Đội ngũ tư vấn có kinh nghiệm và chuyên môn cao, sãn sàng hỗ trợ bạn</small>
           </li>
           <li>
             <img className="benefit__icon" src={Simple} alt="simple kit icon" />
             <p className="benefit__text">Đơn giản</p>
             <small className="benefit__description">
-              Chỉ với 3 bước đơn giản bạn đã có thể tự vệ sinh vùng kín
+              Chúng tôi hỗ trợ tư vấn bạn trên mọi nền tảng phổ biến hiện nay (facebook, zalo)
             </small>
           </li>
           <li>

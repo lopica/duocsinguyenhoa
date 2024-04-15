@@ -8,6 +8,7 @@ import Introduction from "./components/Introduction";
 import Featured from "./components/Featured";
 
 import Footer from "./components/Footer";
+import Hashtag from "./components/Hashtag";
 function LaningPage() {
   return (
     <>
@@ -18,10 +19,11 @@ function LaningPage() {
       <main>
         <Featured />
         <Benefit />
-        <Introduction />
+        {/* <Introduction /> */}
         <SocialProof />
         <FAQ />
         <CTA />
+        <Hashtag />
       </main>
       <Footer />
     </>
