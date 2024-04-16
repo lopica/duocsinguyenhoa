@@ -98,7 +98,7 @@ body {
   display: grid;
   gap: 9.6rem;
   column-gap: 6.4rem;
-  row-gap: 9.6rem;
+  row-gap: 3.2rem;
 }
 
 .grid.grid--2 {
@@ -401,7 +401,7 @@ body {
   font-weight: 500;
   text-align: center;
   margin-bottom: 2.4rem;
-  color: #888;
+  color: #343a40;
 }
 
 .featured__logos {
@@ -415,6 +415,7 @@ body {
   object-fit: cover;
   filter: grayscale(100%);
   opacity: 50%;
+  z-index: -3;
 }
 
 /*
@@ -649,16 +650,31 @@ body {
 }
 
 .cta__card {
-  background-color: #de769b;
   border-radius: 10px;
   padding: 3.2rem 0;
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 1.2rem;
+
+  /* background: #de769b; */
+  /* background-image: linear-gradient(45deg, #F6F5F2, #F0EBE3, #F3D0D7, #FFEFEF); */
+  background-image: linear-gradient(45deg, #F875AA, #FFDFDF, #FFF6F6, #AEDEFC);
+  background-size: 200%;
+  animation: bg-animation 20s infinite alternate;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .cta__heading {
@@ -670,7 +686,17 @@ body {
   text-decoration: none;
   background-color: #fff;
   padding: 1.2rem;
-  color: #de769b;
+  color: #fff;
+  background-image: linear-gradient(45deg, #86469C, #BC7FCD, #FB9AD1, #FFCDEA);
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 1s;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cta__btn:hover,
+.cta__btn:focus {
+  background-position: right;
 }
 
 /*************  HASHTAG SECTION ***************************/
@@ -681,6 +707,11 @@ body {
 .hashtag__list li {
   display: inline-block;
   margin-right: 1.2rem;
+}
+
+.hashtag__list li a {
+  color: #64b3e3;
+  text-decoration: none;
 }
 
 /*************  FOOTER SECTION ***************************/
@@ -737,7 +768,7 @@ address p a:visited {
 
   .grid {
     column-gap: 4.8rem;
-    row-gap: 6.4rem;
+    row-gap: 3.2rem;
   }
 
   .introduction__heading {
@@ -804,6 +835,10 @@ address p a:visited {
     font-size: 43.75%;
   }
 
+  small {
+    color: #212529;
+  }
+
   .carousel {
     width: 64rem;
     flex-direction: column;
@@ -823,9 +858,9 @@ address p a:visited {
 }
 
 @media (max-width: 32.5em) {
-  html {
+  /* html {
     font-size: 31.25%;
-  }
+  } */
 
   /* menu  */
   .navigation__mobile {
@@ -884,30 +919,10 @@ address p a:visited {
   }
 }
 
-@media (max-width: 27.2em) {
-  .benefit__list.grid.grid--3 {
-    grid-template-columns: 1fr;
-  }
-
-  .benefit__text {
-    margin-top: 1.6rem;
-  }
-
-  .benefit__description {
-    padding-inline: 20rem;
-  }
-}
-
-@media (max-width: 25.35em) {
-  .carousel {
-    width: 52rem;
-  }
-}
-
-@media (max-width: 21.25em) {
-  .benefit__description {
-    padding-inline: 16rem;
-  }
+@media (max-width: 28em) {
+  /* .benefit__description {
+    padding-inline: 2rem;
+  } */
 
   .footer .container.grid.grid--3 {
     grid-template-columns: 1fr 1fr;
@@ -919,18 +934,90 @@ address p a:visited {
   }
 }
 
+@media (max-width: 27.2em) {
+  .benefit__list.grid.grid--3 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+  }
+
+  .benefit .container {
+    padding-inline: 8.4rem;
+  }
+
+  .benefit__text {
+    margin-top: 1.6rem;
+  }
+
+  .benefit__description {
+    padding-inline: 2rem;
+  }
+
+  .benefit__list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefit__list li:nth-child(2) {
+    /* background-color: #7c4256; */
+    grid-row: 2 / 3;
+  }
+
+  .benefit__list li:nth-child(3) {
+    /* background-color: #7c4256; */
+    grid-row: 3 / 4;
+  }
+
+  .benefit__icon {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+  .carousel {
+    width: 48rem;
+  }
+}
+
+/* @media (max-width: 25.35em) {
+  .carousel {
+    width: 48rem;
+  }
+} */
+
+@media (max-width: 22.35em) {
+  .carousel {
+    width: 36rem;
+  }
+}
+
 @media (max-width: 18em) {
   .hero__btn:link,
   .hero__btn:visited {
     margin-top: 2.4rem;
   }
 
-  .benefit__description {
-    padding-inline: 10rem;
+  .carousel {
+    width: 24rem;
+  }
+
+  .footer .container.grid.grid--3 {
+    grid-template-columns: 1fr;
   }
 
   .carousel {
-    max-width: 44rem;
+    max-width: 36rem;
+  }
+
+  .footer__navigation {
+    grid-column: span 1;
+    justify-self: center;
+  }
+  /* 
+  .benefit__description {
+    padding-inline: 2rem;
+  } */
+
+  .footer {
+    text-align: center;
   }
 }
 
@@ -947,10 +1034,10 @@ address p a:visited {
     grid-column: span 1;
     justify-self: center;
   }
-
+  /* 
   .benefit__description {
     padding-inline: 2rem;
-  }
+  } */
 
   .footer {
     text-align: center;
