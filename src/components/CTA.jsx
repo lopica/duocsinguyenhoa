@@ -4,7 +4,7 @@ export default function CTA() {
       <div className="container">
         <div className="cta__card">
           <h2 className="cta__heading">Bắt đầu nâng cao chất lượng cuộc sống</h2>
-          <a className="cta__btn" href="https://www.facebook.com/duocsinguyenhoa84">
+          <a className="cta__btn" href="https://m.me/duocsinguyenhoa84">
             Tư vấn cho tôi
           </a>
           <small className="cta__text">

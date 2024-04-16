@@ -14,7 +14,7 @@ export default function Hero() {
           <small>Nhà sáng lập YZONE CARE Chuẩn y khoa</small>
           <a
             className="hero__btn hero__btn--primary margin-right-sm"
-            href="https://www.facebook.com/duocsinguyenhoa84"
+            href="https://m.me/duocsinguyenhoa84"
           >
             Tư vấn cho tôi
           </a>

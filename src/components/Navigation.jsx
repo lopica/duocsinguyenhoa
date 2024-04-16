@@ -15,11 +15,11 @@ export default function Navigation() {
       </a>
       <nav className="header__navigation">
         <ul className="navigation__list">
-          <li>
+          {/* <li>
             <a className="list__link" href="#introduction">
               Cách sử dụng
             </a>
-          </li>
+          </li> */}
           <li>
             <a className="list__link" href="#faq">
               Câu hỏi thường gặp
